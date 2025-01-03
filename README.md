@@ -1,7 +1,8 @@
 # Terraria-Discord-Bot
 Every summer I play a game called Terraria with my brothers. However, it gets annoying to open a
-tab search and find the specific page to the wiki. Using a Node.Js environment I made a discord bot
-that automatically sends you a link to the wiki website if that item exists.
+tab search and find the specific page to the wiki
 
-Uses MongoDB to store users’ information to track experience gain. The more the bot is sued more
-exp the user earns. This builds engagement for users to use the bot
+	Using a Node.js environment and used Discord API to query a wiki database for item lookups. 
+	Configured a three-node MongoDB replica set for high availability, ensuring data durability and bot operation in case of server failures.
+	Deployed the bot to a cloud-hosted infrastructure without the need for local hosting; Used across 5+ servers,
+	Bot calls parallel read operations across multiple MongoDB servers to fetch data to ensure no latency.
